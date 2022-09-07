@@ -1,0 +1,78 @@
+ubuntu@10.10.16.206's password:
+Access denied
+ubuntu@10.10.16.206's password:
+    ┌──────────────────────────────────────────────────────────────────────┐
+    │                 • MobaXterm Personal Edition v22.1 •                 │
+    │               (SSH client, X server and network tools)               │
+    │                                                                      │
+    │ ⮞ SSH session to ubuntu@10.10.16.206                                 │
+    │   • Direct SSH      :  ✓                                             │
+    │   • SSH compression :  ✓                                             │
+    │   • SSH-browser     :  ✓                                             │
+    │   • X11-forwarding  :  ✓  (remote display is forwarded through SSH)  │
+    │                                                                      │
+    │ ⮞ For more info, ctrl+click on help or visit our website.            │
+    └──────────────────────────────────────────────────────────────────────┘
+
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-1012-raspi aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed Sep  7 02:53:14 UTC 2022
+
+  System load:  0.193359375        Processes:              150
+  Usage of /:   15.8% of 14.28GB   Users logged in:        0
+  Memory usage: 12%                IPv4 address for eth0:  10.10.16.206
+  Swap usage:   0%                 IPv4 address for wlan0: 192.168.0.30
+  Temperature:  58.4 C
+
+
+0 updates can be applied immediately.
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Wed Sep  7 02:45:51 2022 from 10.10.16.127
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@ubuntu:~$ cd/etc/netplan/
+-bash: cd/etc/netplan/: No such file or directory
+ubuntu@ubuntu:~$ cd / etc/netplan/
+-bash: cd: too many arguments
+ubuntu@ubuntu:~$  cd /etc/netplan/4
+-bash: cd: /etc/netplan/4: No such file or directory
+ubuntu@ubuntu:~$  cd /etc/netplan/
+ubuntu@ubuntu:/etc/netplan$ ll
+total 12
+drwxr-xr-x   2 root root 4096 Aug  9 12:05 ./
+drwxr-xr-x 101 root root 4096 Sep  7 02:45 ../
+-rw-r--r--   1 root root  731 Aug  9 12:05 50-cloud-init.yaml
+ubuntu@ubuntu:/etc/netplan$ sudo chmod 666
+chmod: missing operand after ‘666’
+Try 'chmod --help' for more information.
+ubuntu@ubuntu:/etc/netplan$ sudo chmod 666 [tab]
+chmod: cannot access '[tab]': No such file or directory
+ubuntu@ubuntu:/etc/netplan$ sudo chmod 666 50-cloud-init.yaml
+ubuntu@ubuntu:/etc/netplan$ -l
+-l: command not found
+ubuntu@ubuntu:/etc/netplan$ ls -l
+total 4
+-rw-rw-rw- 1 root root 731 Aug  9 12:05 50-cloud-init.yaml
+ubuntu@ubuntu:/etc/netplan$ sync
+ubuntu@ubuntu:/etc/netplan$ sync
+ubuntu@ubuntu:/etc/netplan$ sync
+ubuntu@ubuntu:/etc/netplan$
+ubuntu@ubuntu:/etc/netplan$ sudo init 0
+
+Remote side unexpectedly closed network connection
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Session stopped
+    - Press <return> to exit tab
+    - Press R to restart session
+    - Press S to save terminal output to file
